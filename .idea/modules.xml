@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nearline-layer-rec/nearline-layer-rec.iml" filepath="$PROJECT_DIR$/nearline-layer-rec/nearline-layer-rec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/offline-layer-model/offline-layer-model.iml" filepath="$PROJECT_DIR$/offline-layer-model/offline-layer-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-layer-service/online-layer-service.iml" filepath="$PROJECT_DIR$/online-layer-service/online-layer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-rec-sys.iml" filepath="$PROJECT_DIR$/smart-rec-sys.iml" />
+    </modules>
+  </component>
+</project>
