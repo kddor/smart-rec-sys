@@ -5,9 +5,12 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
-
 import java.io.IOException;
 import java.util.*;
+
+/**
+ * create_date:20191003
+ */
 
 public class HbaseClient {
     private static Admin admin;
@@ -28,6 +31,12 @@ public class HbaseClient {
         }
     }
 
+    /**
+     * 创建表
+     * @param tableName
+     * @param columnFamilies
+     * @throws IOException
+     */
     public static void createTable(String tableName, String... columnFamilies) throws IOException {
         TableName tablename = TableName.valueOf(tableName);
         if(admin.tableExists(tablename)){
@@ -64,7 +73,6 @@ public class HbaseClient {
         return new String(resultValue);
     }
 
-
     /**
      * 获取一行的所有数据 并且排序
      * @param tableName 表名
@@ -91,6 +99,22 @@ public class HbaseClient {
         Collections.sort(ans, (m1,m2) -> new Double((Double)m1.getValue()-(Double) m2.getValue()).intValue());
 
         return ans;
+    }
+
+    /**
+     * 取出表中所有的key
+     * @param tableName
+     * @return
+     */
+    public static List<String> getAllKey(String tableName) throws IOException {
+        List<String> keys = new ArrayList<>();
+        Scan scan = new Scan();
+        Table table = HbaseClient.conn.getTable(TableName.valueOf(tableName));
+        ResultScanner scanner = table.getScanner(scan);
+        for (Result r : scanner) {
+            keys.add(new String(r.getRow()));
+        }
+        return keys;
     }
 
     /**
@@ -134,21 +158,4 @@ public class HbaseClient {
         List<Map.Entry> ps = HbaseClient.getRow("test1", "1");
         ps.forEach(System.out::println);
     }
-
-	/**
-	 * 取出表中所有的key
-	 * @param tableName
-	 * @return
-	 */
-	public static List<String> getAllKey(String tableName) throws IOException {
-		List<String> keys = new ArrayList<>();
-		Scan scan = new Scan();
-		Table table = HbaseClient.conn.getTable(TableName.valueOf(tableName));
-		ResultScanner scanner = table.getScanner(scan);
-		for (Result r : scanner) {
-			keys.add(new String(r.getRow()));
-		}
-		return keys;
-	}
-
 }

@@ -18,28 +18,47 @@ public class Property {
 			InputStreamReader inputStreamReader = new InputStreamReader(in, "UTF-8");
 			contextProperties.load(inputStreamReader);
 		} catch (IOException e) {
-			System.err.println(">>>flink-2-hbase<<<资源文件加载失败!");
+			System.err.println(">>>nearline-layer-rec<<<资源文件加载失败!");
 			e.printStackTrace();
 		}
-		System.out.println(">>>flink-2-hbase<<<资源文件加载成功");
+		System.out.println(">>>nearline-layer-rec<<<资源文件加载成功");
 	}
 
+	/**
+	 *
+	 * @param key
+	 * @return
+	 */
 	public static String getStrValue(String key) {
 		return contextProperties.getProperty(key);
 	}
 
+	/**
+	 *
+	 * @param key
+	 * @return
+	 */
 	public static int getIntValue(String key) {
 		String strValue = getStrValue(key);
-		// 注意，此处没有做校验，暂且认为不会出错
 		return Integer.parseInt(strValue);
 	}
 
+	/**
+	 * 获取kafka配置文件
+	 * @param groupId
+	 * @return
+	 */
 	public static Properties getKafkaProperties(String groupId) {
 		Properties properties = new Properties();
 		properties.setProperty("bootstrap.servers", getStrValue("kafka.bootstrap.servers"));
 		properties.setProperty("zookeeper.connect", getStrValue("kafka.zookeeper.connect"));
 		properties.setProperty("group.id", groupId);
 		return properties;
+	}
+
+	public static void main(String args[]){
+		System.out.println(Property.getStrValue("hbase.rootdir"));
+		System.out.println(Property.getStrValue("kafka.zookeeper.connect"));
 	}
 
 }
