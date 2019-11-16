@@ -1,0 +1,147 @@
+2019-10-03 16:09:40 [INFO ](ProducerConfig                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name bufferpool-wait-time
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name buffer-exhausted-records
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name errors
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name produce-throttle-time
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name connections-closed:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name connections-created:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name successful-authentication:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name successful-reauthentication:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name successful-authentication-no-reauth:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name failed-authentication:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name failed-reauthentication:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name reauthentication-latency:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name bytes-sent-received:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name bytes-sent:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name bytes-received:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name select-time:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name io-time:
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name batch-size
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name compression-rate
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name queue-time
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name request-time
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name records-per-request
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name record-retries
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name record-size
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name batch-split-rate
+2019-10-03 16:09:40 [WARN ](ProducerConfig                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] The configuration 'zookeeper.connect' was supplied but isn't a known config.
+2019-10-03 16:09:40 [DEBUG](Sender                        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Starting Kafka producer I/O thread.
+2019-10-03 16:09:40 [WARN ](ProducerConfig                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] The configuration 'group.id' was supplied but isn't a known config.
+2019-10-03 16:09:40 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2019-10-03 16:09:40 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2019-10-03 16:09:40 [INFO ](AppInfoParser                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Kafka version: 2.3.0
+2019-10-03 16:09:40 [INFO ](AppInfoParser                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Kafka commitId: fc1aaa116b661c8a
+2019-10-03 16:09:40 [INFO ](AppInfoParser                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Kafka startTimeMs: 1570090180824
+2019-10-03 16:09:40 [DEBUG](KafkaProducer                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Kafka producer started
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node--1.bytes-sent
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node--1.bytes-received
+2019-10-03 16:09:40 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node--1.latency
+2019-10-03 16:09:40 [DEBUG](Selector                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Created socket with SO_RCVBUF = 326640, SO_SNDBUF = 146988, SO_TIMEOUT = 0 to node -1
+2019-10-03 16:09:41 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Completed connection to node -1. Fetching API versions.
+2019-10-03 16:09:41 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initiating API versions fetch from node -1.
+2019-10-03 16:09:41 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Recorded API versions for node -1: (Produce(0): 0 to 7 [usable: 7], Fetch(1): 0 to 10 [usable: 10], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 7 [usable: 7], LeaderAndIsr(4): 0 to 2 [usable: 2], StopReplica(5): 0 to 1 [usable: 1], UpdateMetadata(6): 0 to 5 [usable: 5], ControlledShutdown(7): 0 to 2 [usable: 2], OffsetCommit(8): 0 to 6 [usable: 6], OffsetFetch(9): 0 to 5 [usable: 5], FindCoordinator(10): 0 to 2 [usable: 2], JoinGroup(11): 0 to 4 [usable: 4], Heartbeat(12): 0 to 2 [usable: 2], LeaveGroup(13): 0 to 2 [usable: 2], SyncGroup(14): 0 to 2 [usable: 2], DescribeGroups(15): 0 to 2 [usable: 2], ListGroups(16): 0 to 2 [usable: 2], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 2 [usable: 2], CreateTopics(19): 0 to 3 [usable: 3], DeleteTopics(20): 0 to 3 [usable: 3], DeleteRecords(21): 0 to 1 [usable: 1], InitProducerId(22): 0 to 1 [usable: 1], OffsetForLeaderEpoch(23): 0 to 2 [usable: 2], AddPartitionsToTxn(24): 0 to 1 [usable: 1], AddOffsetsToTxn(25): 0 to 1 [usable: 1], EndTxn(26): 0 to 1 [usable: 1], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 2 [usable: 2], DescribeAcls(29): 0 to 1 [usable: 1], CreateAcls(30): 0 to 1 [usable: 1], DeleteAcls(31): 0 to 1 [usable: 1], DescribeConfigs(32): 0 to 2 [usable: 2], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 1 [usable: 1], SaslAuthenticate(36): 0 to 1 [usable: 1], CreatePartitions(37): 0 to 1 [usable: 1], CreateDelegationToken(38): 0 to 1 [usable: 1], RenewDelegationToken(39): 0 to 1 [usable: 1], ExpireDelegationToken(40): 0 to 1 [usable: 1], DescribeDelegationToken(41): 0 to 1 [usable: 1], DeleteGroups(42): 0 to 1 [usable: 1], ElectPreferredLeaders(43): 0 [usable: 0], IncrementalAlterConfigs(44): UNSUPPORTED)
+2019-10-03 16:09:41 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2019-10-03 16:09:41 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[],allow_auto_topic_creation=true} with correlation id 1 to node -1
+2019-10-03 16:09:41 [INFO ](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Cluster ID: BHHmjhsOROm9QjJ2RUB9bA
+2019-10-03 16:09:41 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 2 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initialize connection to node 192.168.1.101:9092 (id: 0 rack: null) for sending metadata request
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initiating connection to node 192.168.1.101:9092 (id: 0 rack: null) using address /192.168.1.101
+2019-10-03 16:09:43 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node-0.bytes-sent
+2019-10-03 16:09:43 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node-0.bytes-received
+2019-10-03 16:09:43 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name node-0.latency
+2019-10-03 16:09:43 [DEBUG](Selector                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Created socket with SO_RCVBUF = 310308, SO_SNDBUF = 146988, SO_TIMEOUT = 0 to node 0
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Completed connection to node 0. Fetching API versions.
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Initiating API versions fetch from node 0.
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Recorded API versions for node 0: (Produce(0): 0 to 7 [usable: 7], Fetch(1): 0 to 10 [usable: 10], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 7 [usable: 7], LeaderAndIsr(4): 0 to 2 [usable: 2], StopReplica(5): 0 to 1 [usable: 1], UpdateMetadata(6): 0 to 5 [usable: 5], ControlledShutdown(7): 0 to 2 [usable: 2], OffsetCommit(8): 0 to 6 [usable: 6], OffsetFetch(9): 0 to 5 [usable: 5], FindCoordinator(10): 0 to 2 [usable: 2], JoinGroup(11): 0 to 4 [usable: 4], Heartbeat(12): 0 to 2 [usable: 2], LeaveGroup(13): 0 to 2 [usable: 2], SyncGroup(14): 0 to 2 [usable: 2], DescribeGroups(15): 0 to 2 [usable: 2], ListGroups(16): 0 to 2 [usable: 2], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 2 [usable: 2], CreateTopics(19): 0 to 3 [usable: 3], DeleteTopics(20): 0 to 3 [usable: 3], DeleteRecords(21): 0 to 1 [usable: 1], InitProducerId(22): 0 to 1 [usable: 1], OffsetForLeaderEpoch(23): 0 to 2 [usable: 2], AddPartitionsToTxn(24): 0 to 1 [usable: 1], AddOffsetsToTxn(25): 0 to 1 [usable: 1], EndTxn(26): 0 to 1 [usable: 1], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 2 [usable: 2], DescribeAcls(29): 0 to 1 [usable: 1], CreateAcls(30): 0 to 1 [usable: 1], DeleteAcls(31): 0 to 1 [usable: 1], DescribeConfigs(32): 0 to 2 [usable: 2], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 1 [usable: 1], SaslAuthenticate(36): 0 to 1 [usable: 1], CreatePartitions(37): 0 to 1 [usable: 1], CreateDelegationToken(38): 0 to 1 [usable: 1], RenewDelegationToken(39): 0 to 1 [usable: 1], ExpireDelegationToken(40): 0 to 1 [usable: 1], DescribeDelegationToken(41): 0 to 1 [usable: 1], DeleteGroups(42): 0 to 1 [usable: 1], ElectPreferredLeaders(43): 0 [usable: 0], IncrementalAlterConfigs(44): UNSUPPORTED)
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='click_log')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node 192.168.1.101:9092 (id: 0 rack: null)
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[{name=click_log}],allow_auto_topic_creation=true} with correlation id 3 to node 0
+2019-10-03 16:09:43 [WARN ](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Error while fetching metadata with correlation id 3 : {click_log=LEADER_NOT_AVAILABLE}
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Requesting metadata update for topic click_log due to error LEADER_NOT_AVAILABLE
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 3 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='click_log')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node 192.168.1.101:9092 (id: 0 rack: null)
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[{name=click_log}],allow_auto_topic_creation=true} with correlation id 4 to node 0
+2019-10-03 16:09:43 [WARN ](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {click_log=LEADER_NOT_AVAILABLE}
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Requesting metadata update for topic click_log due to error LEADER_NOT_AVAILABLE
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 4 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='click_log')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node 192.168.1.101:9092 (id: 0 rack: null)
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[{name=click_log}],allow_auto_topic_creation=true} with correlation id 5 to node 0
+2019-10-03 16:09:43 [WARN ](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {click_log=LEADER_NOT_AVAILABLE}
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Requesting metadata update for topic click_log due to error LEADER_NOT_AVAILABLE
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 5 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='click_log')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node 192.168.1.101:9092 (id: 0 rack: null)
+2019-10-03 16:09:43 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[{name=click_log}],allow_auto_topic_creation=true} with correlation id 6 to node 0
+2019-10-03 16:09:43 [WARN ](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {click_log=LEADER_NOT_AVAILABLE}
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Requesting metadata update for topic click_log due to error LEADER_NOT_AVAILABLE
+2019-10-03 16:09:43 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 6 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:44 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='click_log')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node 192.168.1.101:9092 (id: 0 rack: null)
+2019-10-03 16:09:44 [DEBUG](NetworkClient                 ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Using older server API v7 to send METADATA {topics=[{name=click_log}],allow_auto_topic_creation=true} with correlation id 7 to node 0
+2019-10-03 16:09:44 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updating last seen epoch from null to 0 for partition click_log-0
+2019-10-03 16:09:44 [DEBUG](Metadata                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [Producer clientId=producer-1] Updated cluster metadata updateVersion 7 to MetadataCache{cluster=Cluster(id = BHHmjhsOROm9QjJ2RUB9bA, nodes = [192.168.1.101:9092 (id: 0 rack: null)], partitions = [Partition(topic = click_log, partition = 0, leader = 0, replicas = [0], isr = [0], offlineReplicas = [])], controller = 192.168.1.101:9092 (id: 0 rack: null))}
+2019-10-03 16:09:44 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name topic.click_log.records-per-batch
+2019-10-03 16:09:44 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name topic.click_log.bytes
+2019-10-03 16:09:44 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name topic.click_log.compression-rate
+2019-10-03 16:09:44 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name topic.click_log.record-retries
+2019-10-03 16:09:44 [DEBUG](Metrics                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Added sensor with name topic.click_log.record-errors
